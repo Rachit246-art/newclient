@@ -772,7 +772,8 @@ img {
     transition: clip-path 1.2s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-.image-reveal.is-visible {
+.image-reveal.is-visible,
+.is-visible .image-reveal {
     clip-path: inset(0 0 0 0);
 }
 
@@ -784,7 +785,8 @@ img {
     transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.image-reveal.is-visible img {
+.image-reveal.is-visible img,
+.is-visible .image-reveal img {
     transform: scale(1);
 }
 
