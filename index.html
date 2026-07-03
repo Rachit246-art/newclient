@@ -52,18 +52,29 @@
 
         <!-- 2. About Us Section -->
         <section class="about-us craft" id="about">
-            <div class="craft-split">
-                <div class="craft-img-container">
-                    <div class="image-reveal">
-                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop" alt="Our Heritage" class="craft-img">
+            <div class="container craft-split">
+                <div class="craft-img-wrapper stagger-container">
+                    <div class="craft-img-container stagger-item">
+                        <div class="image-reveal">
+                            <img src="assets/about us.png" alt="Our Heritage" class="craft-img">
+                        </div>
+                    </div>
+                    <div class="floating-badge stagger-item delay-2">
+                        <span class="badge-number">100%</span>
+                        <span class="badge-text">Premium<br>Quality</span>
                     </div>
                 </div>
                 <div class="craft-content stagger-container">
-                    <h2 class="section-title stagger-item">About Us</h2>
-                    <div class="hero-divider stagger-item"></div>
-                    <p class="stagger-item delay-1">AETHER was founded on a singular vision: to redefine the classic printed t-shirt. We blend timeless aesthetics with modern, sustainable manufacturing.</p>
-                    <p class="stagger-item delay-2">Every garment is designed in-house, focusing on premium heavyweight cotton that provides a structured drape and unparalleled comfort. We don't just make clothes; we craft artifacts for the modern wardrobe.</p>
-                    <div class="stagger-item delay-3" style="margin-top: 2rem;">
+                    <span class="section-subtitle stagger-item">Our Story</span>
+                    <h2 class="section-title stagger-item delay-1" style="text-align: left; margin-top: 0.5rem;">The AETHER Standard</h2>
+                    <div class="hero-divider stagger-item delay-1"></div>
+                    <p class="stagger-item delay-2" style="font-size: 1.2rem; color: var(--color-text-muted); margin-bottom: 2rem;">
+                        Born from a desire to bridge the gap between high-fashion silhouettes and everyday comfort.
+                    </p>
+                    <p class="stagger-item delay-3" style="color: var(--color-text-muted); margin-bottom: 3rem;">
+                        Every garment is designed in-house, focusing on premium heavyweight cotton that provides a structured drape and unparalleled comfort. We don't just make clothes; we craft artifacts for the modern wardrobe.
+                    </p>
+                    <div class="stagger-item delay-4">
                         <a href="#" class="btn btn-primary magnetic-btn">Discover Our Journey</a>
                     </div>
                 </div>
@@ -105,27 +116,44 @@
 
         <!-- 4. Why Choose Us Section -->
         <section class="why-choose-us" id="why-us">
-            <div class="container">
+            <div class="container craft-split">
                 <div class="why-us-content stagger-container">
-                    <div class="why-us-text">
-                        <h2 class="section-title stagger-item">Why Choose Us</h2>
-                        <div class="hero-divider stagger-item"></div>
-                        <p class="stagger-item delay-1">We refuse to compromise. From the initial sketch to the final stitch, AETHER represents the pinnacle of classic streetwear.</p>
-                        <ul class="why-list">
-                            <li class="stagger-item delay-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                <span>GOTS Certified Organic Heavyweight Cotton</span>
-                            </li>
-                            <li class="stagger-item delay-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                <span>Fade-Resistant DTG Printing</span>
-                            </li>
-                            <li class="stagger-item delay-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                <span>Ethical & Fair-Trade Manufacturing</span>
-                            </li>
-                        </ul>
+                    <h2 class="section-title stagger-item" style="text-align: left; margin-bottom: 3rem;">Why Choose Us</h2>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item stagger-item delay-1">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Organic Heavyweight Cotton</h3>
+                                <p>Sourced from the finest global mills to ensure unparalleled comfort and durability.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item stagger-item delay-2">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Fade-Resistant DTG Printing</h3>
+                                <p>Cutting-edge print technology that embeds the ink deeply, ensuring graphics never crack or fade.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item stagger-item delay-3">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Ethical Manufacturing</h3>
+                                <p>Manufactured with fair-trade practices, ensuring living wages and a commitment to zero waste.</p>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="craft-img-container stagger-item delay-1">
+                    <div class="image-reveal"><img src="assets/hero section/Banner 3.png" alt="Premium Materials" class="craft-img"></div>
                 </div>
             </div>
         </section>
@@ -199,23 +227,46 @@
         <section class="contact-section" id="contact">
             <div class="container contact-container stagger-container">
                 <div class="contact-info stagger-item">
-                    <h2 class="section-title">Get in Touch</h2>
-                    <div class="hero-divider"></div>
-                    <p>For press, wholesale, or customer support inquiries, please reach out via the form or email us directly.</p>
-                    <p class="contact-email">support@aetheraesthetic.com</p>
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Get in Touch</h2>
+                    <p class="contact-desc">For press, wholesale, or customer support inquiries, please reach out via the form or email us directly.</p>
+                    
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Email Us</span>
+                            <a href="mailto:support@aetheraesthetic.com" class="detail-value">support@aetheraesthetic.com</a>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Studio</span>
+                            <p class="detail-value">123 Premium Ave, NY 10012</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Hours</span>
+                            <p class="detail-value">Mon - Fri, 9am - 6pm EST</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-form-wrapper stagger-item delay-1">
+                
+                <div class="contact-form-wrapper glass-card stagger-item delay-1">
                     <form class="contact-form">
-                        <div class="form-group">
-                            <input type="text" placeholder="Name" required>
+                        <div class="form-row">
+                            <div class="form-group floating">
+                                <input type="text" id="name" placeholder=" " required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group floating">
+                                <input type="email" id="email" placeholder=" " required>
+                                <label for="email">Your Email</label>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Email" required>
+                        <div class="form-group floating">
+                            <input type="text" id="subject" placeholder=" " required>
+                            <label for="subject">Subject</label>
                         </div>
-                        <div class="form-group">
-                            <textarea placeholder="Message" rows="5" required></textarea>
+                        <div class="form-group floating">
+                            <textarea id="message" placeholder=" " rows="4" required></textarea>
+                            <label for="message">Message</label>
                         </div>
-                        <button type="submit" class="btn btn-primary magnetic-btn">Send Message</button>
+                        <button type="submit" class="btn btn-outline magnetic-btn">Send Message <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.5rem; vertical-align: middle;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
                     </form>
                 </div>
             </div>
@@ -277,6 +328,16 @@
             </div>
         </div>
     </footer>
+
+    <!-- Gallery Lightbox Modal -->
+    <div id="gallery-lightbox" class="lightbox">
+        <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous Image">&#10094;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Gallery Fullscreen">
+        </div>
+        <button class="lightbox-next" aria-label="Next Image">&#10095;</button>
+    </div>
 
     <!-- Custom Script -->
     <script src="scripts/main.js"></script>

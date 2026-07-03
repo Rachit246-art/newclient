@@ -121,4 +121,66 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    
+    // 7. Gallery Lightbox Logic
+    const galleryItems = document.querySelectorAll('.gallery-item img');
+    const lightbox = document.getElementById('gallery-lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.querySelector('.lightbox-close');
+    const lightboxPrev = document.querySelector('.lightbox-prev');
+    const lightboxNext = document.querySelector('.lightbox-next');
+    
+    if (lightbox && galleryItems.length > 0) {
+        let currentIndex = 0;
+        
+        function openLightbox(index) {
+            currentIndex = index;
+            lightboxImg.src = galleryItems[currentIndex].src;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+        
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        function showNext() {
+            currentIndex = (currentIndex + 1) % galleryItems.length;
+            lightboxImg.src = galleryItems[currentIndex].src;
+        }
+        
+        function showPrev() {
+            currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+            lightboxImg.src = galleryItems[currentIndex].src;
+        }
+        
+        // Add click to each gallery item
+        galleryItems.forEach((img, index) => {
+            const wrapper = img.closest('.gallery-item');
+            if (wrapper) {
+                wrapper.addEventListener('click', () => openLightbox(index));
+            }
+        });
+        
+        // Controls
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightboxNext.addEventListener('click', showNext);
+        lightboxPrev.addEventListener('click', showPrev);
+        
+        // Close on background click
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox || e.target.classList.contains('lightbox-content')) {
+                closeLightbox();
+            }
+        });
+        
+        // Keyboard controls
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') showNext();
+            if (e.key === 'ArrowLeft') showPrev();
+        });
+    }
 });
